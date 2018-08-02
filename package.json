@@ -5,5 +5,8 @@
   "main": "index.js",
   "author": "Richard McCartney <richard@mccartney.io>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "flow": "^0.2.3"
+  }
 }
