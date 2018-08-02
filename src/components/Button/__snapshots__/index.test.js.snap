@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render a default Button 1`] = `
+<div>
+  <button
+    className="css-ewlrv4"
+    disabled={false}
+    onClick={[Function]}
+  >
+    Button
+  </button>
+</div>
+`;
+
+exports[`Button should render an anchor element if href exsists 1`] = `
+<div>
+  <a
+    className="css-ewlrv4"
+    disabled={false}
+    href="link"
+    onClick={[Function]}
+  >
+    Button
+  </a>
+</div>
+`;

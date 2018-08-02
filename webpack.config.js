@@ -15,13 +15,13 @@ module.exports = {
     extensions: ['*', '.js', '.jsx'],
   },
   output: {
-    path: __dirname + '/src',
+    path: __dirname + '/public',
     publicPath: '/',
     filename: 'app.js',
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
   devServer: {
-    contentBase: './src',
+    contentBase: './public',
     hot: true,
   },
 }
