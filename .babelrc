@@ -1,3 +1,24 @@
 {
-  "presets": ["env", "react", "stage-2"]
+  "presets": ["env", "react", "stage-2"],
+  "plugins": [
+    "react-hot-loader/babel",
+    [
+      "emotion",
+      {
+        "hoist": false,
+        "sourceMap": false,
+        "autoLabel": false,
+        "labelFormat": "[local]",
+        "extractStatic": false,
+        "outputDir": "",
+        "importedNames": {
+          "styled": "styled",
+          "css": "css",
+          "keyframes": "keyframes",
+          "injectGlobal": "injectGlobal",
+          "merge": "merge"
+        }
+      }
+    ]
+  ]
 }

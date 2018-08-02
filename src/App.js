@@ -1,11 +1,13 @@
-// @flow
-
+// App.js
 import * as React from 'react'
+import { hot } from 'react-hot-loader'
 
-class App extends React.Component {
-  render() {
-    return <h1>Hello World!</h1>
-  }
-}
+import Button from './components/Button'
 
-export default App
+const App = () => (
+  <div>
+    Hello World! <Button>Click me!</Button>
+  </div>
+)
+
+export default hot(module)(App)

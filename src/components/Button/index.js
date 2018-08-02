@@ -3,10 +3,10 @@
 import * as React from 'react'
 import { css } from 'emotion'
 
-type Props = {
+type PropsType = {
   children: React.Node,
   name?: string,
-  href?: String,
+  href?: string,
   disabled?: boolean,
   onClick: Function,
   ariaLabel?: string,
@@ -27,9 +27,15 @@ const className = css({
   padding: '6px 12px',
   textAlign: 'center',
   userSelect: 'none',
+  '& .primary': {
+    color: 'orange',
+  },
+  '@media (min-width: 420px)': {
+    color: 'blue',
+  },
 })
 
-class Button extends React.Component<Props> {
+class Button extends React.Component<PropsType> {
   static defaultProps = {
     disabled: false,
     onClick: () => {},
@@ -42,7 +48,7 @@ class Button extends React.Component<Props> {
     }
   }
 
-  render() {
+  render = () => {
     const { children, name, disabled, onClick, href, ariaLabel } = this.props
 
     const Tag = href ? 'a' : 'button'
