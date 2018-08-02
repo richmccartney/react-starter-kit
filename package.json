@@ -1,0 +1,9 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "Simple react starter kit using; Webpack, Babel, Jest, Enzyme, Eslint, Flow and Emotion.",
+  "main": "index.js",
+  "author": "Richard McCartney <richard@mccartney.io>",
+  "license": "MIT",
+  "private": true
+}
