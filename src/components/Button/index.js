@@ -30,9 +30,6 @@ const className = css({
   '& .primary': {
     color: 'orange',
   },
-  '@media (min-width: 420px)': {
-    color: 'blue',
-  },
 })
 
 class Button extends React.Component<PropsType> {
