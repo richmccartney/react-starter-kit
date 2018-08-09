@@ -3,7 +3,7 @@
 exports[`Button should render a default Button 1`] = `
 <div>
   <button
-    className="css-ewlrv4"
+    className="css-1oay8uh"
     disabled={false}
     onClick={[Function]}
   >
@@ -15,7 +15,7 @@ exports[`Button should render a default Button 1`] = `
 exports[`Button should render an anchor element if href exsists 1`] = `
 <div>
   <a
-    className="css-ewlrv4"
+    className="css-1oay8uh"
     disabled={false}
     href="link"
     onClick={[Function]}

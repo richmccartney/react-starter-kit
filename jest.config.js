@@ -16,7 +16,7 @@ module.exports = {
   testMatch: ['<rootDir>/**/*.(spec|test).js?(x)'],
 
   // testPathIgnorePatterns: ['/node_modules/'],
-  setupFiles: ['<rootDir>/src/misc/polyfills.js', '<rootDir>/jest.setup.js'],
+  setupFiles: ['<rootDir>/config/polyfills.js', '<rootDir>/jest.setup.js'],
 
   // A list of paths to directories that Jest should use to search for files in.
   projects: ['./src'],
