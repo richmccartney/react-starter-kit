@@ -11,8 +11,9 @@
   },
   "scripts": {
     "clean": "rm -rf dist && mkdir dist",
-    "start": "babel-node ./server.js",
-    "build": "webpack --config ./webpack.prod.js --progress --colors",
+    "start": "babel-node server.js",
+    "build:server": "babel server.js --out-file server.js",
+    "build:client": "webpack -p --config webpack.prod.js --progress",
     "prepublish": "build",
     "lint": "eslint ./src/",
     "flow": "flow",
