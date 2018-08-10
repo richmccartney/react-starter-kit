@@ -6,6 +6,9 @@
   "author": "Richard McCartney <richard@mccartney.io>",
   "license": "MIT",
   "private": true,
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "scripts": {
     "clean": "rm -rf dist && mkdir dist",
     "start": "babel-node ./server.js",
