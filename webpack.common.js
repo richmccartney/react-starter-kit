@@ -1,17 +1,23 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin')
-const path = require('path')
 const webpack = require('webpack')
-
-const htmlPlugin = new HtmlWebPackPlugin({
-  template: './src/index.html',
-  filename: './index.html',
-})
+const path = require('path')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    app: './src/index.js',
+  },
+  plugins: [
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
+      title: 'Production',
+      template: './src/index.html',
+      filename: './index.html',
+    }),
+  ],
   output: {
-    path: path.resolve('dist'),
     filename: 'bundle.js',
+    path: path.resolve('dist'),
   },
   module: {
     rules: [
@@ -40,13 +46,10 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.json?$/,
+        loader: 'json',
+      },
     ],
-  },
-  resolve: {
-    extensions: ['*', '.js', '.jsx'],
-  },
-  plugins: [htmlPlugin],
-  optimization: {
-    minimize: true,
   },
 }
