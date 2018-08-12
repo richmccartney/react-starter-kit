@@ -1,0 +1,9 @@
+{
+  "short_name": "boilerplate",
+  "name": "React boilerplate",
+  "start_url": "/",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#333333"
+}
