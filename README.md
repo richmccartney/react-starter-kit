@@ -17,7 +17,10 @@ Before you get going you&rsquo;ll need to make sure you have node or yarn and in
 ## Features
 
 - React 16
+  - Including React Router for declarative routing
+  - Including Redux for state containers
 - Webpack 4
+  - Includes webdev server and production / development configs
 - Babel
 - Eslint &amp; Prettier for code formatting
 - Unit testing with Jest &amp; Enzyme
