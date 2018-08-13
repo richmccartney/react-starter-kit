@@ -5,24 +5,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
-  entry: {
-    app: './src/index.js',
-  },
+  entry: './src/index.js',
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Production',
+      title: 'React boilerplate',
       template: './src/index.html',
       filename: './index.html',
     }),
-    new CopyWebpackPlugin([
-      { from: './src/assets', to: './assets' },
-      {
-        from: './src/manifest.json',
-        to: './manifest.json',
-        toType: 'file',
-      },
-    ]),
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
   ],
   output: {
     filename: 'bundle.js',
@@ -58,6 +50,18 @@ module.exports = {
       {
         test: /\.json?$/,
         loader: 'json',
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: ['file-loader'],
       },
     ],
   },

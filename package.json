@@ -6,15 +6,10 @@
   "author": "Richard McCartney <richard@mccartney.io>",
   "license": "MIT",
   "private": true,
-  "engines": {
-    "node": ">=8.0.0"
-  },
   "scripts": {
     "clean": "rm -rf dist && mkdir dist",
-    "start": "babel-node server.js",
-    "build:server": "babel server.js --out-file server.js",
-    "build:client": "webpack -p --config webpack.prod.js --progress",
-    "prepublish": "build:client",
+    "start": "webpack-dev-server --config webpack.dev.js --mode development --open",
+    "build": "webpack -p --config webpack.prod.js --progress",
     "lint": "eslint ./src/",
     "flow": "flow",
     "test": "jest -u",
@@ -42,6 +37,7 @@
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.10.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
     "flow": "^0.2.3",
     "flow-bin": "^0.77.0",
     "html-webpack-plugin": "^3.2.0",
@@ -57,7 +53,6 @@
   },
   "dependencies": {
     "emotion": "^9.2.6",
-    "express": "^4.16.3",
     "history": "^4.7.2",
     "path": "^0.12.7",
     "prettier": "^1.14.0",
