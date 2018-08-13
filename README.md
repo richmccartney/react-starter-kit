@@ -8,7 +8,7 @@ Before you get going you&rsquo;ll need to make sure you have node or yarn and in
 
 ### Instructions
 
-- Git clone this repo `git clone <insert repo name>`
+- Git clone this repo `git clone git@github.com:richmccartney/react-starter-kit.git`
 - `cd react-starter-kit`
 - Install all the dependencies with your chosen package manager `yarn install` or `npm install` _(We use yarn)_.
 - Run `yarn start` to start the webpack dev server.
