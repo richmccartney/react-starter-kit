@@ -4,14 +4,14 @@
 
 ## Getting started 🚀
 
-Before you get going you&rsquo;ll need to make sure you have `node v8.*.*` and installed locally on your environment.
+Before you get going you&rsquo;ll need to make sure you have node or yarn and installed locally on your environment.
 
 ### Instructions
 
 - Git clone this repo `git clone <insert repo name>`
 - `cd react-starter-kit`
 - Install all the dependencies with your chosen package manager `yarn install` or `npm install` _(We use yarn)_.
-- Run `yarn start` to start the Express dev server.
+- Run `yarn start` to start the webpack dev server.
 - View your project live at [http://localhost:8080](http://localhost:3000) 👍
 
 ## Features
@@ -23,3 +23,7 @@ Before you get going you&rsquo;ll need to make sure you have `node v8.*.*` and i
 - Unit testing with Jest &amp; Enzyme
 - Flow for static type checking
 - Emotion for performant and flexible CSS-in-JS.
+
+## Build for production
+
+To build the react app for production use the command `yarn build`. This will package and move all required files in to the `/dist` folder. 
