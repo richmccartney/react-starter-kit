@@ -15,6 +15,14 @@ module.exports = {
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    new CopyWebpackPlugin([
+      { from: './src/assets', to: './assets' },
+      {
+        from: './src/manifest.json',
+        to: './manifest.json',
+        toType: 'file',
+      },
+    ]),
   ],
   output: {
     filename: 'bundle.js',
@@ -30,7 +38,7 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
+        test: /\.(css|scss)$/,
         use: [
           {
             loader: 'style-loader',
@@ -39,10 +47,17 @@ module.exports = {
             loader: 'css-loader',
             options: {
               modules: true,
-              importLoaders: 1,
+              importLoaders: 3,
               localIdentName: '[name]_[local]_[hash:base64]',
               sourceMap: true,
               minimize: true,
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+              outputStyle: 'expanded',
             },
           },
         ],
