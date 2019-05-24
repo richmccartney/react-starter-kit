@@ -7,7 +7,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 module.exports = {
   entry: './src/index.js',
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: ['dist']}),
     new HtmlWebpackPlugin({
       title: 'React boilerplate',
       template: './src/index.html',

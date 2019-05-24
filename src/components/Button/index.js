@@ -1,9 +1,9 @@
 // @flow
 
 import * as React from 'react'
-import { css } from 'emotion'
+import { css } from '@emotion/core'
 
-type PropsType = {
+type PropTypes = {
   children: React.Node,
   name?: string,
   href?: string,
@@ -32,7 +32,7 @@ const className = css({
   },
 })
 
-class Button extends React.Component<PropsType> {
+class Button extends React.Component<PropTypes> {
   static defaultProps = {
     disabled: false,
     onClick: () => {},
