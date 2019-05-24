@@ -3,7 +3,7 @@
 import * as React from 'react'
 import { css } from '@emotion/core'
 
-type PropTypes = {
+type PropType = {
   children: React.Node,
   name?: string,
   href?: string,
@@ -32,7 +32,7 @@ const className = css({
   },
 })
 
-class Button extends React.Component<PropTypes> {
+class Button extends React.Component<PropType> {
   static defaultProps = {
     disabled: false,
     onClick: () => {},

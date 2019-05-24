@@ -1,6 +1,6 @@
 {
   "name": "react-starter-kit",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple React starter kit using; Webpack, Babel, Jest, Enzyme, Eslint, Flow and Emotion.",
   "main": "index.js",
   "author": "Richard McCartney <richard@mccartney.io>",
@@ -45,6 +45,7 @@
     "flow": "^0.2.3",
     "flow-bin": "^0.98.1",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^2.3.0",
     "jest": "^24.8.0",
     "open": "^6.3.0",
     "prop-types": "^15.6.2",
@@ -57,6 +58,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.10",
+    "emotion": "^10.0.9",
     "emotion-normalize": "^10.0.0",
     "history": "^4.7.2",
     "path": "^0.12.7",
@@ -76,5 +78,10 @@
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn flow && yarn lint"
+    }
   }
 }
