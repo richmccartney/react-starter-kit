@@ -1,6 +1,6 @@
 {
   "name": "react-starter-kit",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Simple React starter kit using; Webpack, Babel, Jest, Enzyme, Eslint, Flow and Emotion.",
   "main": "index.js",
   "author": "Richard McCartney <richard@mccartney.io>",

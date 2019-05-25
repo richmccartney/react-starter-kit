@@ -30,3 +30,13 @@ Before you get going you&rsquo;ll need to make sure you have node or yarn and in
 ## Build for production
 
 To build the react app for production use the command `yarn build`. This will package and move all required files in to the `/dist` folder. 
+
+## TODO 
+
+- [] Include a SSR setup for the project, we will be using [webpack node modules externals](https://github.com/liady/webpack-node-externals) to create this and express server. 💨
+- [] Setup [Storybook 5](https://storybook.js.org/) for greater component documentation 🖼
+- [] Include Cypress testing, begin simple functional testing and component tests 🔎
+- [] CI tooling, Circle CI / Jenkins / Travis? And automated publishing ⚙️
+- [] Netlify demo 🚀 
+- [] Include [Build Tracker](https://buildtracker.dev/), lets track and setup a performance budget 💪
+- [] Setup [React Component Benchmark](https://github.com/paularmstrong/react-component-benchmark) for component performance and improvements ⚛️
