@@ -22,7 +22,7 @@ module.exports = {
     'react/require-render-return': 0,
     'flowtype/boolean-style': [2, 'boolean'],
     'flowtype/define-flow-type': 1,
-    'flowtype/delimiter-dangle': [2, 'always-multiline'],
+    'flowtype/delimiter-dangle': [2, 'never'],
     'flowtype/generic-spacing': [2, 'never'],
     'flowtype/no-primitive-constructor-types': 2,
     'flowtype/no-types-missing-file-annotation': 2,

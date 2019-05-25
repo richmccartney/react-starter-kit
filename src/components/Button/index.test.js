@@ -9,7 +9,7 @@ describe('Button', () => {
     const button = renderer.create(
       <div>
         <Button>Button</Button>
-      </div>,
+      </div>
     )
     const json = button.toJSON()
     expect(json).toMatchSnapshot()
@@ -19,7 +19,7 @@ describe('Button', () => {
     const button = renderer.create(
       <div>
         <Button href="link">Button</Button>
-      </div>,
+      </div>
     )
     const json = button.toJSON()
     expect(json).toMatchSnapshot()
@@ -43,7 +43,7 @@ describe('Button', () => {
     const button = shallow(
       <Button disabled onClick={onClick}>
         onClick test
-      </Button>,
+      </Button>
     )
 
     button.find('button').simulate('click')
