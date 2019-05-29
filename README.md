@@ -33,10 +33,10 @@ To build the react app for production use the command `yarn build`. This will pa
 
 ## TODO 
 
-- [] Include a SSR setup for the project, we will be using [webpack node modules externals](https://github.com/liady/webpack-node-externals) to create this and express server. 💨
-- [] Setup [Storybook 5](https://storybook.js.org/) for greater component documentation 🖼
-- [] Include Cypress testing, begin simple functional testing and component tests 🔎
-- [] CI tooling, Circle CI / Jenkins / Travis? And automated publishing ⚙️
-- [] Netlify demo 🚀 
-- [] Include [Build Tracker](https://buildtracker.dev/), lets track and setup a performance budget 💪
-- [] Setup [React Component Benchmark](https://github.com/paularmstrong/react-component-benchmark) for component performance and improvements ⚛️
+- [ ] Include a SSR setup for the project, we will be using [webpack node modules externals](https://github.com/liady/webpack-node-externals) to create this and express server. 💨
+- [ ] Setup [Storybook 5](https://storybook.js.org/) for greater component documentation 🖼
+- [ ] Include Cypress testing, begin simple functional testing and component tests 🔎
+- [ ] CI tooling, Circle CI / Jenkins / Travis? And automated publishing ⚙️
+- [ ] Netlify demo 🚀 
+- [ ] Include [Build Tracker](https://buildtracker.dev/), lets track and setup a performance budget 💪
+- [ ] Setup [React Component Benchmark](https://github.com/paularmstrong/react-component-benchmark) for component performance and improvements ⚛️
