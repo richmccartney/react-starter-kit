@@ -35,7 +35,8 @@ const title = {
 const logo = {
   width: '150px',
   filter: 'drop-shadow(0 0 30px #111)',
-  animation: `${bounce} 1s ease`
+  animation: `${bounce} 1s ease`,
+  overflow: 'visible'
 }
 
 class App extends React.Component<{}> {
