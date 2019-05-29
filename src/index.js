@@ -6,7 +6,7 @@ import { Provider } from 'react-redux'
 import AppRoutes from './routes'
 import store from './state/store'
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <Provider store={store}>
     <AppRoutes />
   </Provider>,

@@ -1,18 +1,20 @@
 // @flow
 
 import * as React from 'react'
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 
 import App from '../containers/App'
 import Page from '../containers/Page'
+import NotFound from '../containers/NotFound'
 
 export default () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/page" component={Page} />
+        <Route path="*" component={NotFound} />
       </Switch>
-    </BrowserRouter>
+    </Router>
   )
 }
