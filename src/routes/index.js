@@ -13,7 +13,7 @@ export default () => {
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/page" component={Page} />
-        <Route path="*" component={NotFound} />
+        <Route component={NotFound} />
       </Switch>
     </Router>
   )
