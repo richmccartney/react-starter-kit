@@ -11,7 +11,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'React boilerplate',
       template: './src/index.html',
-      filename: './index.html',
+      filename: './index.html'
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
@@ -36,7 +36,7 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-        },
+        }
       },
       {
         test: /\.(css|scss)$/,

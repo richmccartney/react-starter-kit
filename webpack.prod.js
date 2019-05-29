@@ -8,6 +8,6 @@ module.exports = merge(common, {
   mode: 'production',
   plugins: [new ExtractTextPlugin('[name]-[hash].min.css')],
   optimization: {
-    minimize: true,
+    minimize: true
   },
 })
